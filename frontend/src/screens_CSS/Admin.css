@@ -1,0 +1,114 @@
+.admin-container {
+  max-width: 1000px;
+  margin: 10px auto 40px; 
+  padding: 20px;
+}
+
+.admin-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.admin-total {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.admin-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.admin-search input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.admin-search button {
+  padding: 8px 16px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.admin-search button:hover {
+  background: #005fa3;
+}
+
+/* 🔹 Each user box takes full width */
+.admin-user-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-user-card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.admin-user-card:hover {
+  transform: translateY(-3px);
+}
+
+.toggle-posts-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #28a745;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.toggle-posts-btn:hover {
+  background: #218838;
+}
+
+.admin-posts {
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+.admin-posts ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.admin-posts li {
+  margin-bottom: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .admin-search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .admin-search input {
+    width: 100%;
+  }
+
+  .admin-search button {
+    width: 100%;
+  }
+}
